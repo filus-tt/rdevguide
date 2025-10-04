@@ -17,6 +17,7 @@ book:
     - index.qmd
     - cap.qmd
     - tu.qmd
+    - filus.qmd
 
 format:
   html:
