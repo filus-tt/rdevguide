@@ -2,12 +2,17 @@ project:
   type: book
 
 book:
-  title: "Tu Libro"
-  author: "Tu Nombre"
+  title: "El Arquitecto Invisible"
+  author: "Filus & Aisa"
   date: today
   favicon: img/favicon.png
   repo-url: https://github.com/tu-usuario/tu-repo
   repo-branch: main
+  repo-actions: [edit, issue]
+  sharing: [linkedin]
+  open-graph: true
+  image: img/cover_page_scriberia.png
+  downloads: [pdf, epub]
   chapters:
     - index.qmd
     - cap.qmd
@@ -15,7 +20,11 @@ book:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: [cosmo, css/theme-dark.scss]
+    include-in-header: html/header.html
+    description-meta: "This guide is a comprehensive resource for contributors (from all levels, beginners, intermediate, and seasoned) to the R project, facilitating their onboarding and helping them navigate the contribution process."
   pdf:
     documentclass: scrbook
     pdf-engine: lualatex
