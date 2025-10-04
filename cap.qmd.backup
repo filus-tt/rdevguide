@@ -1,0 +1,73 @@
+# Diálogo entre Filus y Aisa {#sec-dialogo}
+
+Este es el texto narrativo normal del libro, que usa la tipografía principal.
+
+## Método 1: Usando comandos LaTeX directos
+
+\filus{Hola Aisa, tengo una pregunta sobre las tipografías en este libro.}
+
+\aisa{¡Hola Filus! Claro, estoy aquí para ayudarte. ¿Qué te gustaría saber?}
+
+\filus{Me pregunto si podemos usar diferentes fuentes para distinguir nuestros diálogos.}
+
+\aisa{Exactamente, ese es el propósito de este sistema. Mi texto usa una tipografía sans-serif moderna, mientras que el tuyo usa una serif más clásica.}
+
+## Método 2: Usando bloques Div de Quarto
+
+También puedes usar la sintaxis de Quarto con clases CSS/LaTeX:
+
+::: {.filus}
+Este es un bloque de texto de Filus usando la sintaxis de Quarto.
+Puede contener múltiples párrafos y es más fácil de escribir
+cuando tienes mucho texto.
+:::
+
+::: {.aisa}
+Y este es mi bloque de texto. Como ves, puedo responder
+con mi propia tipografía distintiva. Esto hace que el
+diálogo sea visualmente más interesante y fácil de seguir.
+:::
+
+## Ejemplos de código
+
+Aquí hay un ejemplo de código en R, que usa la tipografía monoespaciada:
+
+```r
+# Función de ejemplo
+calcular_suma <- function(a, b) {
+  resultado <- a + b
+  return(resultado)
+}
+
+# Uso de la función
+total <- calcular_suma(5, 3)
+print(total)
+```
+
+## Método 3: Usando entornos LaTeX para diálogos largos
+
+Para diálogos muy extensos, puedes usar:
+
+```{=latex}
+\begin{filusenv}
+Este es un diálogo largo de Filus que puede
+contener múltiples párrafos y pensamientos complejos.
+
+Puedo desarrollar ideas elaboradas aquí,
+y todo el texto mantendrá mi tipografía característica.
+\end{filusenv}
+
+\begin{aisaenv}
+Y yo puedo responder con mi propia voz tipográfica.
+La distinción visual ayuda al lector a seguir
+quién está hablando en cada momento.
+
+Esto es especialmente útil en conversaciones largas
+o debates filosóficos entre nosotros.
+\end{aisaenv}
+```
+
+## Texto normal
+
+Después de los diálogos, el texto vuelve a la tipografía normal del libro.
+Esto mantiene una jerarquía visual clara en todo el documento.

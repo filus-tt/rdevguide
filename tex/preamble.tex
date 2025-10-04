@@ -1,11 +1,51 @@
+% Paquetes básicos
 \usepackage{booktabs}
 \usepackage{pdfpages}
 \usepackage{amsthm}
+\usepackage{graphicx}
+
+% Configuración de márgenes y espaciado
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  top=2.5cm,
+  bottom=2.5cm,
+  left=3cm,
+  right=3cm
+}
+
+% Espaciado de teoremas
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
 \makeatother
+
+% Configuración de portada
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
+
+% Mejoras de hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+  pdfpagemode=FullScreen,
+}
+
+% Configuración de listados de código
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  captionpos=b
+}
+
+% NOTA: Los entornos filus y aisa están definidos en fonts.tex
+% NO duplicar definiciones aquí

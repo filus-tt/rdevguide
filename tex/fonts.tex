@@ -1,0 +1,106 @@
+% ============================================
+% CONFIGURACIÓN DE FUENTES CON FONTSPEC
+% ============================================
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+% Fuente principal (texto general)
+\setmainfont{LibertinusSerif}[
+  Path=_fonts/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic
+]
+
+% Fuente sans-serif (títulos)
+\setsansfont{LibertinusSans}[
+  Path=_fonts/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic
+]
+
+% Fuente monoespaciada (código)
+\setmonofont{FiraCode}[
+  Path=_fonts/,
+  Extension=.ttf,
+  UprightFont=*-Regular,
+  Scale=0.85
+]
+
+% ============================================
+% TIPOGRAFÍAS PARA LOS PERSONAJES
+% ============================================
+
+% Tipografía para Filus (el humano) - Serif elegante
+\newfontfamily\filusfont{LibertinusSerif}[
+  Path=_fonts/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  Color=2C3E50
+]
+
+% Tipografía para Aisa (la IA) - Sans-serif moderna
+\newfontfamily\aisafont{LibertinusSans}[
+  Path=_fonts/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  Color=2980B9
+]
+
+% ============================================
+% COMANDOS PERSONALIZADOS PARA DIÁLOGOS
+% ============================================
+
+% Comandos cortos (usando nombres únicos)
+\newcommand{\filustext}[1]{%
+  \begin{quote}
+    {\filusfont\textbf{Filus:} #1}
+  \end{quote}
+}
+
+\newcommand{\aisatext}[1]{%
+  \begin{quote}
+    {\aisafont\textbf{Aisa:} #1}
+  \end{quote}
+}
+
+% Entornos largos (usando nombres únicos)
+\newenvironment{dialogofilus}{%
+  \begin{quote}
+  \filusfont
+  \noindent\textbf{Filus:}\par
+}{%
+  \end{quote}
+}
+
+\newenvironment{dialogoaisa}{%
+  \begin{quote}
+  \aisafont
+  \noindent\textbf{Aisa:}\par
+}{%
+  \end{quote}
+}
+
+% ============================================
+% PERSONALIZACIÓN DE TÍTULOS CON KOMA-SCRIPT
+% ============================================
+
+\addtokomafont{chapter}{\sffamily\bfseries}
+\addtokomafont{section}{\sffamily\bfseries}
+\addtokomafont{subsection}{\sffamily\bfseries}
+
+% ============================================
+% COLORES
+% ============================================
+
+\definecolor{filuscolor}{HTML}{2C3E50}
+\definecolor{aisacolor}{HTML}{2980B9}
+\definecolor{codecolor}{HTML}{3E4451}

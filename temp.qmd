@@ -1,0 +1,16 @@
+tu-proyecto/
+├── _fonts/
+│   ├── LibertinusSerif-Regular.otf
+│   ├── LibertinusSerif-Bold.otf
+│   ├── LibertinusSerif-Italic.otf
+│   ├── LibertinusSans-Regular.otf
+│   ├── LibertinusSans-Bold.otf
+│   ├── LibertinusSans-Italic.otf
+│   ├── LibertinusSans-Semibold.otf
+│   └── FiraCode-Regular.ttf
+├── tex/
+│   ├── fonts.tex
+│   ├── preamble.tex
+│   └── frontpage.tex
+├── _quarto.yml
+└── tus capítulos .qmd
