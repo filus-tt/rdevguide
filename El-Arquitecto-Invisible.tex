@@ -302,6 +302,22 @@
 \definecolor{aisacolor}{HTML}{2980B9}
 \definecolor{codecolor}{HTML}{3E4451}
 \makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
 \makeatletter
@@ -541,6 +557,24 @@ normal}\label{continuando-con-texto-normal}
 
 Después de los diálogos, el texto narrativo vuelve a la tipografía
 principal del libro.
+
+\bookmarksetup{startatroot}
+
+\chapter{titulo Filus}\label{titulo-filus}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, colframe=quarto-callout-color-frame, toprule=.15mm, arc=.35mm, breakable, left=2mm, opacityback=0, rightrule=.15mm, colback=white]
+
+Hi i am Filus
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[ v := vec(x_1, x_2, x_3) \]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[ (x+y)^n = \sum_{k=0}^n {n \choose k}x^{n-k}y^k = \sum_{k=0}^n {n \choose k}x^{k}y^{n-k} \]
 
 
 \backmatter
