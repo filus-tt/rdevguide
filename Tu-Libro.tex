@@ -63,6 +63,46 @@
 \fi
 \makeatother
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
@@ -388,6 +428,69 @@ This project is licensed under a
 Attribution 4.0 International (CC BY 4.0)}. Some pages may contain
 materials that are subject to copyright, in which case you will see the
 copyright notice.
+
+\bookmarksetup{startatroot}
+
+\chapter{Diálogo entre Filus y Aisa}\label{sec-dialogo}
+
+Este es el texto narrativo normal del libro, que usa la tipografía
+principal.
+
+\section{Método 1: Usando comandos LaTeX
+directos}\label{muxe9todo-1-usando-comandos-latex-directos}
+
+\filustext{Hola Aisa, tengo una pregunta sobre las tipografías en este libro.}
+
+\aisatext{¡Hola Filus! Claro, estoy aquí para ayudarte. ¿Qué te gustaría saber?}
+
+\filustext{Me pregunto si podemos usar diferentes fuentes para distinguir nuestros diálogos.}
+
+\aisatext{Exactamente, ese es el propósito de este sistema. Mi texto usa una tipografía sans-serif moderna, mientras que el tuyo usa una serif más clásica.}
+
+\section{Método 2: Usando entornos LaTeX para diálogos
+largos}\label{muxe9todo-2-usando-entornos-latex-para-diuxe1logos-largos}
+
+Para diálogos extensos, usa los entornos LaTeX:
+
+\begin{dialogofilus}
+Este es un diálogo largo de Filus que puede
+contener múltiples párrafos y pensamientos complejos.
+
+Puedo desarrollar ideas elaboradas aquí,
+y todo el texto mantendrá mi tipografía característica.
+\end{dialogofilus}
+
+\begin{dialogoaisa}
+Y yo puedo responder con mi propia voz tipográfica.
+La distinción visual ayuda al lector a seguir
+quién está hablando en cada momento.
+
+Esto es especialmente útil en conversaciones largas
+o debates filosóficos entre nosotros.
+\end{dialogoaisa}
+
+\section{Ejemplos de código}\label{ejemplos-de-cuxf3digo}
+
+Aquí hay un ejemplo de código en R, que usa la tipografía monoespaciada:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Función de ejemplo}
+\NormalTok{calcular\_suma }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(a, b) \{}
+\NormalTok{  resultado }\OtherTok{\textless{}{-}}\NormalTok{ a }\SpecialCharTok{+}\NormalTok{ b}
+  \FunctionTok{return}\NormalTok{(resultado)}
+\NormalTok{\}}
+
+\CommentTok{\# Uso de la función}
+\NormalTok{total }\OtherTok{\textless{}{-}} \FunctionTok{calcular\_suma}\NormalTok{(}\DecValTok{5}\NormalTok{, }\DecValTok{3}\NormalTok{)}
+\FunctionTok{print}\NormalTok{(total)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Texto normal}\label{texto-normal}
+
+Después de los diálogos, el texto vuelve a la tipografía normal del
+libro. Esto mantiene una jerarquía visual clara en todo el documento.
 
 
 \backmatter

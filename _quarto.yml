@@ -10,7 +10,7 @@ book:
   repo-branch: main
   chapters:
     - index.qmd
-    #- cap.qmd
+    - cap.qmd
     #- tu.qmd
 
 format:
