@@ -29,6 +29,7 @@ format:
     theme:
       light: cosmo
       dark: [cosmo, css/theme-dark.scss]
+    css: css/dialogos.css
     include-in-header: html/header.html
     description-meta: "This guide is a comprehensive resource for contributors (from all levels, beginners, intermediate, and seasoned) to the R project, facilitating their onboarding and helping them navigate the contribution process."
   pdf:

@@ -1,0 +1,63 @@
+/* Estilos para diálogos en HTML */
+
+/* Contenedor de diálogo de Filus */
+.dialogofilus {
+  font-family: 'Libertinus Serif', 'Georgia', serif;
+  color: #2C3E50;
+  background-color: #f8f9fa;
+  border-left: 4px solid #2C3E50;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.dialogofilus::before {
+  content: "Filus:";
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Contenedor de diálogo de Aisa */
+.dialogoaisa {
+  font-family: 'Libertinus Sans', 'Arial', sans-serif;
+  color: #2980B9;
+  background-color: #e8f4f8;
+  border-left: 4px solid #2980B9;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.dialogoaisa::before {
+  content: "Aisa:";
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Párrafos dentro de diálogos */
+.dialogofilus p,
+.dialogoaisa p {
+  margin-bottom: 0.8em;
+}
+
+.dialogofilus p:last-child,
+.dialogoaisa p:last-child {
+  margin-bottom: 0;
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .dialogofilus {
+    background-color: #1a1a1a;
+    border-left-color: #75AADB;
+    color: #e0e0e0;
+  }
+  
+  .dialogoaisa {
+    background-color: #1e2a35;
+    border-left-color: #75AADB;
+    color: #b8d4e8;
+  }
+}
