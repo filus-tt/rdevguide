@@ -15,9 +15,14 @@ book:
   downloads: [pdf, epub]
   chapters:
     - index.qmd
+    - intro.qmd
     - cap.qmd
     - tu.qmd
     - filus.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
 
 format:
   html:

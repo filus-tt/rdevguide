@@ -1,0 +1,25 @@
+
+# Bienvenidos a El Arquitecto Invisible
+
+Este es el texto principal del capítulo, que usará la fuente por defecto del tema `cosmo`.
+
+## Una sección con estilos personalizados
+
+Podemos aplicar estilos específicos a diferentes partes del texto.
+
+::: {.filus}
+Este párrafo está escrito con la fuente Cambria, aplicando la clase `.filus`. Es ideal para citas o fragmentos que necesiten un toque más clásico y editorial.
+:::
+
+::: {.aisa}
+Este otro párrafo utiliza la fuente Segoe UI, gracias a la clase `.aisa`. Esta fuente es moderna y muy legible, perfecta para notas o comentarios adicionales.
+:::
+
+Y aquí tenemos un ejemplo de código:
+
+```javascript
+function helloWorld() {
+  // Este código usará la fuente Source Code Pro
+  console.log("¡Hola, mundo tipográfico!");
+}
+```

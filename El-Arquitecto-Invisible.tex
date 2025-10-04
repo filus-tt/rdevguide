@@ -447,6 +447,38 @@ copyright notice.
 
 \bookmarksetup{startatroot}
 
+\chapter{Bienvenidos a El Arquitecto
+Invisible}\label{bienvenidos-a-el-arquitecto-invisible}
+
+Este es el texto principal del capítulo, que usará la fuente por defecto
+del tema \texttt{cosmo}.
+
+\section{Una sección con estilos
+personalizados}\label{una-secciuxf3n-con-estilos-personalizados}
+
+Podemos aplicar estilos específicos a diferentes partes del texto.
+
+Este párrafo está escrito con la fuente Cambria, aplicando la clase
+\texttt{.filus}. Es ideal para citas o fragmentos que necesiten un toque
+más clásico y editorial.
+
+Este otro párrafo utiliza la fuente Segoe UI, gracias a la clase
+\texttt{.aisa}. Esta fuente es moderna y muy legible, perfecta para
+notas o comentarios adicionales.
+
+Y aquí tenemos un ejemplo de código:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \FunctionTok{helloWorld}\NormalTok{() \{}
+  \CommentTok{// Este código usará la fuente Source Code Pro}
+  \BuiltInTok{console}\OperatorTok{.}\FunctionTok{log}\NormalTok{(}\StringTok{"¡Hola, mundo tipográfico!"}\NormalTok{)}\OperatorTok{;}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\bookmarksetup{startatroot}
+
 \chapter{Diálogo entre Filus y Aisa}\label{sec-dialogo}
 
 Este es el texto narrativo normal del libro, que usa la tipografía
@@ -562,7 +594,7 @@ principal del libro.
 
 \chapter{titulo Filus}\label{titulo-filus}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, colframe=quarto-callout-color-frame, toprule=.15mm, arc=.35mm, breakable, left=2mm, opacityback=0, rightrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, breakable, colback=white, opacityback=0, rightrule=.15mm, left=2mm, bottomrule=.15mm, colframe=quarto-callout-color-frame, leftrule=.75mm, arc=.35mm, toprule=.15mm]
 
 Hi i am Filus
 
@@ -575,6 +607,21 @@ Hi i am Filus
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \[ (x+y)^n = \sum_{k=0}^n {n \choose k}x^{n-k}y^k = \sum_{k=0}^n {n \choose k}x^{k}y^{n-k} \]
+
+\bookmarksetup{startatroot}
+
+\chapter{Summary}\label{summary}
+
+In summary, this book has no content whatsoever.
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
 
 
 \backmatter
