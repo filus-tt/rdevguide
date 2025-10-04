@@ -1,13 +1,7 @@
-# Capítulo 1
+# Capítulo tu
 
 Este es texto normal.
 
-\filustext{Hola Aisa, ¿cómo funcionan las tipografías?
-Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico}
-
-\aisatext{Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico.}
-
-## Código de ejemplo
 
 ```r
 print("Hola mundo")
@@ -17,16 +11,15 @@ print("Hola mundo")
 
 Para conversaciones más largas, puedes usar los entornos:
 
-```{=latex}
-\begin{dialogofilus}
+::: {.dialogofilus}
 ¿Y qué pasa si quiero desarrollar una idea más compleja?
 ¿Puedo usar múltiples párrafos?
 
 Porque a veces necesito expresar pensamientos
 que requieren más espacio y estructura.
-\end{dialogofilus}
+:::
 
-\begin{dialogoaisa}
+::: {.dialogoaisa}
 ¿Y qué pasa si quiero desarrollar una idea más compleja?
 ¿Puedo usar múltiples párrafos?
 
@@ -37,7 +30,8 @@ diseñados precisamente para eso.
 
 Puedes escribir tantos párrafos como necesites,
 y todo mantendrá tu tipografía distintiva.
-\end{dialogoaisa}
+:::
+
 ```
 
 ## Continuando con texto normal

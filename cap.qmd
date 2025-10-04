@@ -2,9 +2,15 @@
 
 Este es texto normal.
 
-\filustext{Hola Aisa, ¿cómo funcionan las tipografías?}
+::: {.dialogofilus}
 
-\aisatext{Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico.}
+Hola Aisa, ¿cómo funcionan las tipografías?
+:::
+
+::: {.dialogoaisa}
+
+Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico.
+:::
 
 ## Código de ejemplo
 

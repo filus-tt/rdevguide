@@ -7,11 +7,11 @@ Este es el texto principal del capítulo, que usará la fuente por defecto del t
 
 Podemos aplicar estilos específicos a diferentes partes del texto.
 
-::: {.filus}
+::: {.dialogofilus}
 Este párrafo está escrito con la fuente Cambria, aplicando la clase `.filus`. Es ideal para citas o fragmentos que necesiten un toque más clásico y editorial.
 :::
 
-::: {.aisa}
+::: {.dialogoaisa}
 Este otro párrafo utiliza la fuente Segoe UI, gracias a la clase `.aisa`. Esta fuente es moderna y muy legible, perfecta para notas o comentarios adicionales.
 :::
 

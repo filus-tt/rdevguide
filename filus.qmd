@@ -1,11 +1,3 @@
----
-title: titulo Filus
-format:
-  typst: 
-    template: chapters/ch1.typ
----
-
-
 ::: {.callout}
 Hi i am Filus
 ::: 
