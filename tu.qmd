@@ -2,11 +2,45 @@
 
 Este es texto normal.
 
-\filus{Hola Aisa, ¿cómo funcionan las tipografías?}
+\filustext{Hola Aisa, ¿cómo funcionan las tipografías?
+Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico}
 
-\aisa{Las tipografías nos dan personalidad visual. Yo uso sans-serif 
-porque soy una IA moderna, tú usas serif porque eres humano clásico.}
+\aisatext{Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico.}
 
 ## Código de ejemplo
+
 ```r
 print("Hola mundo")
+```
+
+## Diálogos más extensos
+
+Para conversaciones más largas, puedes usar los entornos:
+
+```{=latex}
+\begin{dialogofilus}
+¿Y qué pasa si quiero desarrollar una idea más compleja?
+¿Puedo usar múltiples párrafos?
+
+Porque a veces necesito expresar pensamientos
+que requieren más espacio y estructura.
+\end{dialogofilus}
+
+\begin{dialogoaisa}
+¿Y qué pasa si quiero desarrollar una idea más compleja?
+¿Puedo usar múltiples párrafos?
+
+Porque a veces necesito expresar pensamientos
+que requieren más espacio y estructura.
+Por supuesto, Filus. Los entornos largos están
+diseñados precisamente para eso.
+
+Puedes escribir tantos párrafos como necesites,
+y todo mantendrá tu tipografía distintiva.
+\end{dialogoaisa}
+```
+
+## Continuando con texto normal
+
+Después de los diálogos, el texto narrativo vuelve
+a la tipografía principal del libro.

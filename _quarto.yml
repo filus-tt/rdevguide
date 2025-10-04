@@ -11,7 +11,7 @@ book:
   chapters:
     - index.qmd
     - cap.qmd
-    #- tu.qmd
+    - tu.qmd
 
 format:
   html:
