@@ -13,3 +13,4 @@ rdevguide.tex
 
 /.quarto/
 _book
+**/*.quarto_ipynb
