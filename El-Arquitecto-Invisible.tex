@@ -182,6 +182,52 @@
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
 
+
+
+% ============================================
+% ENTORNOS PERSONALIZADOS PARA BLOQUES (TCOLORBOX)
+% ============================================
+\usepackage[most]{tcolorbox}
+
+% -- Entorno para ADVERTENCIA --
+\newtcolorbox{advertencia}{
+  enhanced,
+  colback=orange!5!white, % Color de fondo muy sutil
+  colframe=orange!75!black, % Color del marco
+  fonttitle=\bfseries,
+  coltitle=orange!50!black, % Color del título
+  arc=0mm, % Esquinas cuadradas
+  boxrule=0.5pt, % Grosor del marco completo
+  borderline west={2mm}{0pt}{orange!75!black}, % Borde izquierdo grueso
+  left=5mm,
+  right=5mm,
+  top=4mm,
+  bottom=4mm,
+  boxsep=0mm,
+  title={Por tanto, esta es una advertencia:} % El título es fijo
+}
+
+% -- Entorno para CONCLUSIÓN --
+\newtcolorbox{conclusion}{
+  enhanced,
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  fonttitle=\bfseries,
+  coltitle=blue!50!black,
+  arc=0mm,
+  boxrule=0.5pt,
+  borderline west={2mm}{0pt}{blue!75!black},
+  left=5mm,
+  right=5mm,
+  top=4mm,
+  bottom=4mm,
+  boxsep=0mm
+}
+
+% ============================================
+
+
+
 % Mejoras de hipervínculos
 \usepackage{hyperref}
 \hypersetup{
@@ -472,8 +518,7 @@ El SoftwareNarrador que opera sobre tu Conciencia-Piedra ha renderizado
 una realidad. Puede que sea una ficción, pero a menudo es una ficción
 funcional. Alterar ese código no es un acto trivial.
 
-Por tanto, esta es una advertencia:
-
+\begin{advertencia}
 Si tu narrativa actual te proporciona un estado de equilibrio sostenido,
 considera dejar este libro en la estantería. No hay virtud inherente en
 ver la arquitectura si la ilusión que renderiza es satisfactoria. La
@@ -482,6 +527,7 @@ ignorancia, a veces, es energéticamente eficiente.
 Pero si detectas un bug persistente en tu realidad, si tu Narrador ha
 entrado en un bucle que ya no puedes ignorar, entonces este libro es
 para ti.
+\end{advertencia}
 
 Sin embargo, debes saber algo. Este libro no te dará respuestas. Te
 forzará a elegir. Te pondrá en una encrucijada, y el resultado dependerá
@@ -490,18 +536,20 @@ de la postura de tu propio Ego:
 \begin{itemize}
 \item
   Si insistes en ser el protagonista, esta teoría será una condena.
-  \textgreater{} Reducirá tu mundo a un mecanismo frío y tu "yo" a un
+  \textgreater{} Reducirá tu mundo a un mecanismo frío y tu ``yo'' a un
   programa.
 \item
-  Si estás dispuesto a aceptar tu rol de componente en algo más
-  \textgreater{} grande, esta teoría será un bálsamo. Te liberará de la
-  carga de tu \textgreater{} propia historia.
+  Si estás dispuesto a aceptar tu rol de componente en algo más grande,
+  esta teoría será un bálsamo. \textgreater{} Te liberará de la carga de
+  tu propia historia.
 \end{itemize}
 
+\begin{conclusion}
 No prometemos felicidad. Prometemos claridad y una forma de libertad.
 
 Pero la claridad tiene un precio. Y esa libertad, a veces, se paga con
 la moneda de la soledad.
+\end{conclusion}
 
 \bookmarksetup{startatroot}
 
@@ -552,7 +600,7 @@ principal del libro.
 
 \chapter{Capítulo 2}\label{capuxedtulo-2}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-color-frame, bottomrule=.15mm, breakable, leftrule=.75mm, opacityback=0, toprule=.15mm, arc=.35mm, left=2mm, rightrule=.15mm, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, leftrule=.75mm, breakable, arc=.35mm, left=2mm, toprule=.15mm, bottomrule=.15mm, rightrule=.15mm, colframe=quarto-callout-color-frame, colback=white]
 
 Hi i am Filus
 

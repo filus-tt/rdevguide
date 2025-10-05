@@ -85,6 +85,8 @@ format:
     # Filtros
     filters:
       - _extensions/dialogos/dialogos.lua
+      - _extensions/callouts.lua 
+
     # Configuración de página
     papersize: a5  # Tamaño común para libros
     margin-left: 2cm

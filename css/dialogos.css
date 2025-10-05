@@ -61,3 +61,59 @@
     color: #b8d4e8;
   }
 }
+
+/* ============================================ */
+/* ESTILOS PERSONALIZADOS PARA BLOQUES DE LLAMADA */
+/* ============================================ */
+
+/* Base para ambos tipos de bloques */
+.callout-advertencia,
+.callout-conclusion {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 1.2em;
+  border-left: 5px solid; /* Borde izquierdo sólido */
+  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  background-color: #f8f9fa; /* Un fondo muy sutil para modo claro */
+}
+
+/* Título dentro de los bloques */
+.callout-advertencia .callout-title,
+.callout-conclusion .callout-title {
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+}
+
+/* Párrafos dentro de los bloques */
+.callout-advertencia p,
+.callout-conclusion p {
+  margin-bottom: 0.5em;
+}
+.callout-advertencia p:last-child,
+.callout-conclusion p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Estilos específicos para ADVERTENCIA */
+.callout-advertencia {
+  border-left-color: #e67e22; /* Naranja/Ámbar para advertencia */
+}
+.callout-advertencia .callout-title {
+  color: #e67e22;
+}
+
+/* Estilos específicos para CONCLUSIÓN */
+.callout-conclusion {
+  border-left-color: #3498db; /* Azul para conclusión */
+}
+.callout-conclusion .callout-title {
+  color: #3498db;
+}
+
+/* Estilos para modo oscuro (si lo usas) */
+body.dark .callout-advertencia,
+body.dark .callout-conclusion {
+    background-color: #2c3e50; /* Un fondo oscuro sutil */
+}

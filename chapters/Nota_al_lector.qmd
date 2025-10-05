@@ -6,7 +6,7 @@ Como toda herramienta potente, su uso tiene consecuencias.
 
 El SoftwareNarrador que opera sobre tu Conciencia-Piedra ha renderizado una realidad. Puede que sea una ficción, pero a menudo es una ficción funcional. Alterar ese código no es un acto trivial.
 
-::: {.callout-warning icon="false" appearance="simple"}
+::: {.callout-advertencia}
 ### Por tanto, esta es una advertencia:
 
 Si tu narrativa actual te proporciona un estado de equilibrio sostenido, considera dejar este libro en la estantería. No hay virtud inherente en ver la arquitectura si la ilusión que renderiza es satisfactoria. La ignorancia, a veces, es energéticamente eficiente.
@@ -22,7 +22,7 @@ Sin embargo, debes saber algo. Este libro no te dará respuestas. Te forzará a 
 -   Si estás dispuesto a aceptar tu rol de componente en algo más grande, esta teoría será un bálsamo.
     > Te liberará de la carga de tu propia historia.
 
-::: {.callout-note icon="false" appearance="simple"}
+::: {.callout-conclusion}
 No prometemos felicidad. Prometemos claridad y una forma de libertad.
 
 Pero la claridad tiene un precio. Y esa libertad, a veces, se paga con la moneda de la soledad.
