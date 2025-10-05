@@ -22,12 +22,10 @@ book:
   downloads: [pdf, epub]
   chapters:
     - index.qmd
-    - intro.qmd
-    - cap.qmd
-    - tu.qmd
-    - filus.qmd
-    - summary.qmd
-    - references.qmd
+    - chapters\Nota_al_lector.qmd
+    - chapters\cap.qmd
+    - chapters\filus.qmd
+
 
   # Páginas especiales
 appendices:
@@ -39,8 +37,6 @@ appendices:
 lang: es
 bibliography: references.bib  # Si usas referencias
 #csl: apa.csl  # Estilo de citas
-
-
 
   # ============================================
   # FORMATO HTML - SOLO para preview interno
@@ -110,11 +106,6 @@ format:
     keywords: 
       - fil
       - us
-
-
-
-
-
 
  # ============================================
   # FORMATO EPUB - Para venta digital
