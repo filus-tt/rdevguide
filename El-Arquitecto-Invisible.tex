@@ -373,7 +373,7 @@
 
 \title{El Arquitecto Invisible}
 \author{Filus \& Aisa}
-\date{2025-10-04}
+\date{2025-10-05}
 \begin{document}
 \frontmatter
 \maketitle
@@ -458,13 +458,17 @@ personalizados}\label{una-secciuxf3n-con-estilos-personalizados}
 
 Podemos aplicar estilos específicos a diferentes partes del texto.
 
+\begin{dialogofilus}
 Este párrafo está escrito con la fuente Cambria, aplicando la clase
 \texttt{.filus}. Es ideal para citas o fragmentos que necesiten un toque
 más clásico y editorial.
+\end{dialogofilus}
 
+\begin{dialogoaisa}
 Este otro párrafo utiliza la fuente Segoe UI, gracias a la clase
 \texttt{.aisa}. Esta fuente es moderna y muy legible, perfecta para
 notas o comentarios adicionales.
+\end{dialogoaisa}
 
 Y aquí tenemos un ejemplo de código:
 
@@ -483,34 +487,38 @@ Y aquí tenemos un ejemplo de código:
 
 Este es texto normal.
 
-Hola Aisa, ¿cómo funcionan las tipografías?
+\filustext{Hola Aisa, ¿cómo funcionan las tipografías?}
 
-Las tipografías nos dan personalidad visual. Yo uso sans-serif porque
-soy una IA moderna, tú usas serif porque eres humano clásico.
+\aisatext{Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico.}
 
 \section{Código de ejemplo}\label{cuxf3digo-de-ejemplo}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{print}\NormalTok{(}\StringTok{"Hola mundo"}\NormalTok{)}
+\FunctionTok{print}\NormalTok{(}\StringTok{"Hola mundo filus lua"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \section{Diálogos más extensos}\label{diuxe1logos-muxe1s-extensos}
 
-Para conversaciones más largas, puedes usar los entornos:
+Para conversaciones más largas, ahora puedes usar la sintaxis unificada:
 
+\begin{dialogofilus}
 ¿Y qué pasa si quiero desarrollar una idea más compleja? ¿Puedo usar
 múltiples párrafos?
 
 Porque a veces necesito expresar pensamientos que requieren más espacio
 y estructura.
+\end{dialogofilus}
 
-Por supuesto, Filus. Los entornos largos están diseñados precisamente
-para eso.
+\begin{dialogoaisa}
+Por supuesto, Filus. Los bloques Div están diseñados precisamente para
+eso.
 
 Puedes escribir tantos párrafos como necesites, y todo mantendrá tu
-tipografía distintiva.
+tipografía distintiva. Y ahora funciona tanto en HTML como en PDF
+gracias al filtro Lua.
+\end{dialogoaisa}
 
 \section{Continuando con texto
 normal}\label{continuando-con-texto-normal}
@@ -534,12 +542,15 @@ Este es texto normal.
 
 Para conversaciones más largas, puedes usar los entornos:
 
+\begin{dialogofilus}
 ¿Y qué pasa si quiero desarrollar una idea más compleja? ¿Puedo usar
 múltiples párrafos?
 
 Porque a veces necesito expresar pensamientos que requieren más espacio
 y estructura.
+\end{dialogofilus}
 
+\begin{dialogoaisa}
 ¿Y qué pasa si quiero desarrollar una idea más compleja? ¿Puedo usar
 múltiples párrafos?
 
@@ -549,6 +560,7 @@ precisamente para eso.
 
 Puedes escribir tantos párrafos como necesites, y todo mantendrá tu
 tipografía distintiva.
+\end{dialogoaisa}
 
 \begin{verbatim}
 
@@ -567,7 +579,7 @@ a la tipografía principal del libro.
 
 \chapter{}\label{section}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colback=white, colframe=quarto-callout-color-frame, leftrule=.75mm, left=2mm, opacityback=0, toprule=.15mm, arc=.35mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, toprule=.15mm, colback=white, arc=.35mm, colframe=quarto-callout-color-frame, breakable, rightrule=.15mm, bottomrule=.15mm, left=2mm, opacityback=0]
 
 Hi i am Filus
 

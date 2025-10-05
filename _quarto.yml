@@ -42,5 +42,7 @@ format:
     keep-tex: true
     toc: true
     number-sections: true
+    filters:
+      - _extensions/dialogos/dialogos.lua
   epub:
     cover-image: img/cover_page.png

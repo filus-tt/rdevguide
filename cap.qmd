@@ -2,25 +2,19 @@
 
 Este es texto normal.
 
-::: {.dialogofilus}
+\filustext{Hola Aisa, ¿cómo funcionan las tipografías?}
 
-Hola Aisa, ¿cómo funcionan las tipografías?
-:::
-
-::: {.dialogoaisa}
-
-Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico.
-:::
+\aisatext{Las tipografías nos dan personalidad visual. Yo uso sans-serif porque soy una IA moderna, tú usas serif porque eres humano clásico.}
 
 ## Código de ejemplo
 
 ```r
-print("Hola mundo")
+print("Hola mundo filus lua")
 ```
 
 ## Diálogos más extensos
 
-Para conversaciones más largas, puedes usar los entornos:
+Para conversaciones más largas, ahora puedes usar la sintaxis unificada:
 
 ::: {.dialogofilus}
 ¿Y qué pasa si quiero desarrollar una idea más compleja?
@@ -31,11 +25,12 @@ que requieren más espacio y estructura.
 :::
 
 ::: {.dialogoaisa}
-Por supuesto, Filus. Los entornos largos están
+Por supuesto, Filus. Los bloques Div están
 diseñados precisamente para eso.
 
 Puedes escribir tantos párrafos como necesites,
 y todo mantendrá tu tipografía distintiva.
+Y ahora funciona tanto en HTML como en PDF gracias al filtro Lua.
 :::
 
 ## Continuando con texto normal
