@@ -1,0 +1,307 @@
+/* Estilos personalizados para EPUB */
+
+/* ============================================
+   TIPOGRAFÍAS EMBEBIDAS
+   ============================================ */
+
+@font-face {
+  font-family: 'Libertinus Serif';
+  src: url('../_fonts/LibertinusSerif-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libertinus Serif';
+  src: url('../_fonts/LibertinusSerif-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libertinus Serif';
+  src: url('../_fonts/LibertinusSerif-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Libertinus Sans';
+  src: url('../_fonts/LibertinusSans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libertinus Sans';
+  src: url('../_fonts/LibertinusSans-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../_fonts/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+
+body {
+  font-family: 'Libertinus Serif', Georgia, serif;
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libertinus Sans', Arial, sans-serif;
+  font-weight: bold;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+/* ============================================
+   DIÁLOGOS - FILUS Y AISA
+   ============================================ */
+
+.dialogofilus {
+  font-family: 'Libertinus Serif', Georgia, serif;
+  color: #2C3E50;
+  background-color: #f8f9fa;
+  border-left: 4px solid #2C3E50;
+  padding: 1em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.dialogofilus::before {
+  content: "Filus:";
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
+.dialogoaisa {
+  font-family: 'Libertinus Sans', Arial, sans-serif;
+  color: #2980B9;
+  background-color: #e8f4f8;
+  border-left: 4px solid #2980B9;
+  padding: 1em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.dialogoaisa::before {
+  content: "Aisa:";
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
+/* ============================================
+   CÓDIGO
+   ============================================ */
+
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+  background-color: #f4f4f4;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85em;
+  background-color: #f4f4f4;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 5px;
+  page-break-inside: avoid;
+  line-height: 1.4;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* ============================================
+   PÁRRAFOS Y TEXTO
+   ============================================ */
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-indent: 1.5em;
+  orphans: 3;
+  widows: 3;
+}
+
+/* Primer párrafo después de título sin sangría */
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  text-indent: 0;
+}
+
+/* ============================================
+   IMÁGENES Y FIGURAS
+   ============================================ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  page-break-inside: avoid;
+}
+
+figure {
+  margin: 1.5em 0;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+/* ============================================
+   LISTAS
+   ============================================ */
+
+ul, ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* ============================================
+   CITAS
+   ============================================ */
+
+blockquote {
+  font-style: italic;
+  margin: 1.5em 2em;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ccc;
+  background-color: #f9f9f9;
+  page-break-inside: avoid;
+}
+
+/* ============================================
+   TABLAS
+   ============================================ */
+
+table {
+  width: 100%;
+  margin: 1.5em 0;
+  border-collapse: collapse;
+  page-break-inside: avoid;
+}
+
+th, td {
+  padding: 0.5em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+/* ============================================
+   SALTOS DE PÁGINA
+   ============================================ */
+
+.page-break {
+  page-break-after: always;
+}
+
+/* Evitar saltos en elementos importantes */
+.no-break {
+  page-break-inside: avoid;
+}
+
+/* ============================================
+   PORTADA Y PÁGINAS ESPECIALES
+   ============================================ */
+
+.cover-page {
+  text-align: center;
+  page-break-after: always;
+}
+
+.title-page h1 {
+  font-size: 2.5em;
+  margin-top: 30%;
+  margin-bottom: 0.5em;
+}
+
+.title-page .author {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* ============================================
+   ENLACES
+   ============================================ */
+
+a {
+  color: #2980B9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   NOTAS AL PIE
+   ============================================ */
+
+.footnote {
+  font-size: 0.85em;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+}
+
+.footnote-ref {
+  vertical-align: super;
+  font-size: 0.8em;
+}

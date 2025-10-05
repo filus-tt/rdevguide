@@ -1,16 +1,8 @@
-tu-proyecto/
-├── _fonts/
-│   ├── LibertinusSerif-Regular.otf
-│   ├── LibertinusSerif-Bold.otf
-│   ├── LibertinusSerif-Italic.otf
-│   ├── LibertinusSans-Regular.otf
-│   ├── LibertinusSans-Bold.otf
-│   ├── LibertinusSans-Italic.otf
-│   ├── LibertinusSans-Semibold.otf
-│   └── FiraCode-Regular.ttf
-├── tex/
-│   ├── fonts.tex
-│   ├── preamble.tex
-│   └── frontpage.tex
-├── _quarto.yml
-└── tus capítulos .qmd
+tu-libro/
+├── chapters/           # Capítulos del libro (.qmd)
+├── _fonts/            # Tipografías personalizadas
+├── css/               # Estilos (HTML y EPUB)
+├── tex/               # Configuración LaTeX (PDF)
+├── _extensions/       # Filtro Lua para diálogos
+├── scripts/           # Scripts de construcción
+└── _quarto.yml        # Configuración principal

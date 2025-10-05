@@ -1,10 +1,16 @@
 project:
   type: book
+  output-dir: _output
 
 book:
   title: "El Arquitecto Invisible"
   author: "Filus & Aisa"
   date: today
+ # Metadatos importantes para venta
+  description: "Descripción de tu libro para tiendas y SEO"
+  language: es
+  isbn: "978-X-XXXX-XXXX-X"  # Añade tu ISBN cuando lo tengas
+
   favicon: img/favicon.png
   repo-url: https://github.com/tu-usuario/tu-repo
   repo-branch: main
@@ -12,6 +18,7 @@ book:
   sharing: [linkedin]
   open-graph: true
   image: img/cover_page_scriberia.png
+  cover-image: img/cover.png
   downloads: [pdf, epub]
   chapters:
     - index.qmd
@@ -22,27 +29,132 @@ book:
     - summary.qmd
     - references.qmd
 
-bibliography: references.bib
+  # Páginas especiales
+appendices:
+    - chapters/apendice.qmd
 
+# ============================================
+# METADATA GLOBAL
+# ============================================
+lang: es
+bibliography: references.bib  # Si usas referencias
+#csl: apa.csl  # Estilo de citas
+
+
+
+  # ============================================
+  # FORMATO HTML - SOLO para preview interno
+  # NO se publica en web
+  # ============================================
 format:
   html:
     theme:
       light: cosmo
       dark: [cosmo, css/theme-dark.scss]
-    css: css/dialogos.css
+    css: 
+      - css/dialogos.css
+      - css/preview.css
     include-in-header: html/header.html
     description-meta: "This guide is a comprehensive resource for contributors (from all levels, beginners, intermediate, and seasoned) to the R project, facilitating their onboarding and helping them navigate the contribution process."
+
+    # NO incluir repo ni sharing para evitar distribución
+    repo-url: null
+    repo-actions: []
+    sharing: []
+    
+    # Marca de agua para preview
+    include-before-body: html/preview-watermark.html
+    
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    code-fold: false
+    
+    # Evitar indexación
+    website:
+      google-analytics: null
+      cookie-consent: false
+
+# ============================================
+# FORMATO PDF - Para venta e impresión
+# ============================================
   pdf:
     documentclass: scrbook
     pdf-engine: lualatex
+    # Headers y configuración
     include-in-header: 
-     - tex/preamble.tex
-     - tex/fonts.tex
+      - tex/preamble.tex
+      - tex/fonts.tex
     include-before-body: tex/frontpage.tex
-    keep-tex: true
-    toc: true
-    number-sections: true
+    # Filtros
     filters:
       - _extensions/dialogos/dialogos.lua
+    # Configuración de página
+    papersize: a5  # Tamaño común para libros
+    margin-left: 2cm
+    margin-right: 1.5cm
+    margin-top: 2cm
+    margin-bottom: 2cm
+    # Índices
+    toc: true
+    toc-depth: 2
+    toc-title: "Índice"
+    number-sections: true
+    number-depth: 2
+    # Control de versiones
+    keep-tex: true
+    # Metadatos del PDF
+    title-meta: "El Arquitecto Invisible"
+    author-meta: "JADL"
+    subject: "Polimorfica"
+    keywords: 
+      - fil
+      - us
+
+
+
+
+
+
+ # ============================================
+  # FORMATO EPUB - Para venta digital
+  # ============================================
   epub:
-    cover-image: img/cover_page.png
+    # Portada
+    cover-image: img/cover.png
+    
+    # Filtros
+    filters:
+      - _extensions/dialogos/dialogos.lua
+    
+    # Metadatos EPUB
+    epub-title-page: true
+    epub-cover-image: img/cover.png
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    
+    # CSS personalizado para EPUB
+    css: 
+      - css/dialogos.css
+      - css/epub-custom.css
+    
+    # Fuentes embebidas en EPUB
+    epub-fonts:
+      - _fonts/LibertinusSerif-Regular.otf
+      - _fonts/LibertinusSerif-Bold.otf
+      - _fonts/LibertinusSerif-Italic.otf
+      - _fonts/LibertinusSans-Regular.otf
+      - _fonts/LibertinusSans-Bold.otf
+      - _fonts/FiraCode-Regular.ttf
+    
+    # Metadatos comerciales
+    publisher: "Filus & Aisa"
+    rights: "© 2025 Tu Nombre. Todos los derechos reservados."
+    language: es
+
+# ============================================
+# CONFIGURACIÓN DE DESARROLLO
+# ============================================
+execute:
+  freeze: auto  # No re-ejecutar código innecesariamente
