@@ -38,7 +38,7 @@ appendices:
 # ============================================
 lang: es
 bibliography: references.bib  # Si usas referencias
-csl: apa.csl  # Estilo de citas
+#csl: apa.csl  # Estilo de citas
 
 
 
