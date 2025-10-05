@@ -32,7 +32,6 @@ Puedes escribir tantos párrafos como necesites,
 y todo mantendrá tu tipografía distintiva.
 :::
 
-```
 
 ## Continuando con texto normal
 
