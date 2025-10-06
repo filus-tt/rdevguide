@@ -28,47 +28,50 @@
 
 
 
+
+
 % ============================================
 % ENTORNOS PERSONALIZADOS PARA BLOQUES (TCOLORBOX)
 % ============================================
 \usepackage[most]{tcolorbox}
 
-% -- Entorno para ADVERTENCIA --
+% --- Definición de colores para reutilizar ---
+\definecolor{filusOrange}{HTML}{e67e22}
+\definecolor{aisaBlue}{HTML}{3498db}
+
+% --- Entorno para ADVERTENCIA (Sintaxis Corregida) ---
 \newtcolorbox{advertencia}{
   enhanced,
-  colback=orange!5!white, % Color de fondo muy sutil
-  colframe=orange!75!black, % Color del marco
-  fonttitle=\bfseries,
-  coltitle=orange!50!black, % Color del título
-  arc=0mm, % Esquinas cuadradas
-  boxrule=0.5pt, % Grosor del marco completo
-  borderline west={2mm}{0pt}{orange!75!black}, % Borde izquierdo grueso
-  left=5mm,
+  frame hidden,
+  borderline west={2mm}{0pt}{filusOrange},
+  colback=white,
+  coltext=black,
+  fonttitle=\bfseries\sffamily,
+  coltitle=filusOrange,
+  left=10mm,
   right=5mm,
-  top=4mm,
-  bottom=4mm,
-  boxsep=0mm,
-  title={Por tanto, esta es una advertencia:} % El título es fijo
+  top=5mm,
+  bottom=5mm,
+  arc=0mm,
+  title={Por tanto, esta es una advertencia:}
 }
 
-% -- Entorno para CONCLUSIÓN --
+% --- Entorno para CONCLUSIÓN (Sintaxis Corregida) ---
 \newtcolorbox{conclusion}{
   enhanced,
-  colback=blue!5!white,
-  colframe=blue!75!black,
-  fonttitle=\bfseries,
-  coltitle=blue!50!black,
-  arc=0mm,
-  boxrule=0.5pt,
-  borderline west={2mm}{0pt}{blue!75!black},
-  left=5mm,
+  frame hidden,
+  borderline west={2mm}{0pt}{aisaBlue},
+  colback=white,
+  coltext=black,
+  left=10mm,
   right=5mm,
-  top=4mm,
-  bottom=4mm,
-  boxsep=0mm
+  top=5mm,
+  bottom=5mm,
+  arc=0mm
 }
-
 % ============================================
+
+
 
 
 
