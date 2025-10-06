@@ -39,7 +39,7 @@
 \definecolor{filusOrange}{HTML}{e67e22}
 \definecolor{aisaBlue}{HTML}{3498db}
 
-% --- Entorno para ADVERTENCIA (Sintaxis Corregida) ---
+% --- Entorno para ADVERTENCIA (Tipografía Sans-Serif) ---
 \newtcolorbox{advertencia}{
   enhanced,
   frame hidden,
@@ -48,6 +48,7 @@
   coltext=black,
   fonttitle=\bfseries\sffamily,
   coltitle=filusOrange,
+  fontupper=\sffamily, % <-- CAMBIO: De monoespaciada a sans-serif
   left=10mm,
   right=5mm,
   top=5mm,
@@ -56,13 +57,14 @@
   title={Por tanto, esta es una advertencia:}
 }
 
-% --- Entorno para CONCLUSIÓN (Sintaxis Corregida) ---
+% --- Entorno para CONCLUSIÓN (Tipografía Sans-Serif) ---
 \newtcolorbox{conclusion}{
   enhanced,
   frame hidden,
   borderline west={2mm}{0pt}{aisaBlue},
   colback=white,
   coltext=black,
+  fontupper=\sffamily, % <-- CAMBIO: De monoespaciada a sans-serif
   left=10mm,
   right=5mm,
   top=5mm,
@@ -70,7 +72,6 @@
   arc=0mm
 }
 % ============================================
-
 
 
 

@@ -184,47 +184,51 @@
 
 
 
+
+
 % ============================================
 % ENTORNOS PERSONALIZADOS PARA BLOQUES (TCOLORBOX)
 % ============================================
 \usepackage[most]{tcolorbox}
 
-% -- Entorno para ADVERTENCIA --
+% --- Definición de colores para reutilizar ---
+\definecolor{filusOrange}{HTML}{e67e22}
+\definecolor{aisaBlue}{HTML}{3498db}
+
+% --- Entorno para ADVERTENCIA (Tipografía Sans-Serif) ---
 \newtcolorbox{advertencia}{
   enhanced,
-  colback=orange!5!white, % Color de fondo muy sutil
-  colframe=orange!75!black, % Color del marco
-  fonttitle=\bfseries,
-  coltitle=orange!50!black, % Color del título
-  arc=0mm, % Esquinas cuadradas
-  boxrule=0.5pt, % Grosor del marco completo
-  borderline west={2mm}{0pt}{orange!75!black}, % Borde izquierdo grueso
-  left=5mm,
+  frame hidden,
+  borderline west={2mm}{0pt}{filusOrange},
+  colback=white,
+  coltext=black,
+  fonttitle=\bfseries\sffamily,
+  coltitle=filusOrange,
+  fontupper=\sffamily, % <-- CAMBIO: De monoespaciada a sans-serif
+  left=10mm,
   right=5mm,
-  top=4mm,
-  bottom=4mm,
-  boxsep=0mm,
-  title={Por tanto, esta es una advertencia:} % El título es fijo
+  top=5mm,
+  bottom=5mm,
+  arc=0mm,
+  title={Por tanto, esta es una advertencia:}
 }
 
-% -- Entorno para CONCLUSIÓN --
+% --- Entorno para CONCLUSIÓN (Tipografía Sans-Serif) ---
 \newtcolorbox{conclusion}{
   enhanced,
-  colback=blue!5!white,
-  colframe=blue!75!black,
-  fonttitle=\bfseries,
-  coltitle=blue!50!black,
-  arc=0mm,
-  boxrule=0.5pt,
-  borderline west={2mm}{0pt}{blue!75!black},
-  left=5mm,
+  frame hidden,
+  borderline west={2mm}{0pt}{aisaBlue},
+  colback=white,
+  coltext=black,
+  fontupper=\sffamily, % <-- CAMBIO: De monoespaciada a sans-serif
+  left=10mm,
   right=5mm,
-  top=4mm,
-  bottom=4mm,
-  boxsep=0mm
+  top=5mm,
+  bottom=5mm,
+  arc=0mm
 }
-
 % ============================================
+
 
 
 
@@ -432,7 +436,7 @@
 
 \title{El Arquitecto Invisible}
 \author{Filus \& Aisa}
-\date{2025-10-05}
+\date{2025-10-06}
 \begin{document}
 \frontmatter
 \maketitle
@@ -600,7 +604,7 @@ principal del libro.
 
 \chapter{Capítulo 2}\label{capuxedtulo-2}
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, leftrule=.75mm, breakable, arc=.35mm, left=2mm, toprule=.15mm, bottomrule=.15mm, rightrule=.15mm, colframe=quarto-callout-color-frame, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, colframe=quarto-callout-color-frame, colback=white, breakable, left=2mm, arc=.35mm, leftrule=.75mm]
 
 Hi i am Filus
 
